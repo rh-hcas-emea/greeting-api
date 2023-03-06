@@ -26,9 +26,16 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>org.liquibase</groupId>
+        <artifactId>liquibase-core</artifactId>
+        <version>4.16.1</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
+    <!-- downgrade due to liquibase issue: https://github.com/quarkusio/quarkus/issues/30568 -->
+
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-hibernate-orm-rest-data-panache</artifactId>
