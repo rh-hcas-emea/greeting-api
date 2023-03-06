@@ -2,10 +2,10 @@
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
 									 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 									 xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 	<changeSet id="1" author="stocky37">
 		<createTable tableName="aliases">
-			<column name="id" type="int" autoIncrement="true">
+			<column name="id" type="bigint" autoIncrement="true">
 				<constraints nullable="false" primaryKey="true" primaryKeyName="pk_aliases"/>
 			</column>
 			<column name="name" type="varchar(255)"/>
